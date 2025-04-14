@@ -1,0 +1,81 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 98.7%;
+    position: fixed;
+    top: 0.6vh;
+    left: 0.6vw;
+    z-index: 100;
+    box-shadow: var(--boxShadowPurple);
+    background: var(--white);
+    border-radius: 0.8em;
+  }
+  
+  #headerLogo img {
+    width: 25vw;
+  }
+  
+  header nav {
+    margin-right: 1em;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  header ul {
+    display: flex;
+  }
+  
+  .links a {
+    font-size: 0.9em;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    margin: 0.3em;
+    transition: all .18s ease-in-out;
+    font-weight: 600;
+    white-space: nowrap;
+    border-bottom: solid var(--accent);
+    color: var(--primary);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    right: 8%;
+  
+    z-index: 1;
+    margin: 0 -0.3em;
+    width: fit-content;
+  
+    box-shadow: 5px 3px 8.37px rgba(69,36,232,.2);
+    background: var(--white);
+  }
+  
+  .dropdownContent a {
+    display: block;
+    margin: 1em;
+  }
+  
+  .dropdown:hover .dropdownContent {
+    display: block;
+  }
+  
+  .dropdown:hover .dropButton {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+  
+  nav a:hover {
+    background: var(--primary) !important;
+    color: var(--white);
+    border-color: var(--primary);
+  }
